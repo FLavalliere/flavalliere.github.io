@@ -49,3 +49,17 @@ grunt serve
 <Br/>
 
 
+# How to commit
+
+sh commit.sh
+
+# How to push to github
+
+sh push.sh
+
+# Once ready either go to the github page :
+
+http://flavalliere.github.io/app/
+
+or update the vm from your koding webiste
+
