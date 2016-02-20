@@ -1,0 +1,1 @@
+Hack.ApplicationAdapter = DS.FixtureAdapter;
