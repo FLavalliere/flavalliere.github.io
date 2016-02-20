@@ -1,65 +1,12 @@
-git clone 'https://FLavalliere@github.com/FLavalliere/flavalliere.github.io.git'
-<br/>
-cd flavalliere.github.io/
-<br/>
-git config --global "user.name" "FirstName LastName"
-<br/>
-git config --global "user.email" "email"
-<br/>
-cd ..
-<br/>
-mv flavalliere.github.io hack
-<br/>
+# flavallieregithubio
 
-sudo npm install -g yo
-<br/>
-sudo npm install -g generator-ember
-<br/>
-cd hack
-<br/>
-yo ember
-<br/>
-kpm install grunt
-<br/>
-sudo npm install -g grunt-cli
-<br/>
-sudo apt-get install ruby-dev
-<br/>
-sudo gem install sass --no-ri --no-rdoc
-<br/>
-sudo gem install compass --no-ri --no-rdoc
-<br/>
-sudo npm install -g compass
-<br/>
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.15.1.
 
+## Build & development
 
-npm install grunt-cli
-<Br/>
-in case previous command didnt work : sudo npm -g  install grunt-cli
-<Br/>
-npm install grunt
-<Br/>
-in case previous command didnt work : sudo npm install grunt
-<Br/>
-npm install 
-<Br/>
-sudo npm install
-<Br/>
-grunt serve
-<Br/>
+Run `grunt` for building and `grunt serve` for preview.
 
+## Testing
 
-# How to commit
-
-sh commit.sh
-
-# How to push to github
-
-sh push.sh
-
-# Once ready either go to the github page :
-
-http://flavalliere.github.io/app/
-
-or update the vm from your koding webiste
-
+Running `grunt test` will run the unit tests with karma.

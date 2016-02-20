@@ -1,10 +1,35 @@
-var Hack = window.Hack = Ember.Application.create();
+'use strict';
 
-/* Order and include as you please. */
-require('scripts/controllers/*');
-require('scripts/store');
-require('scripts/models/*');
-require('scripts/routes/*');
-require('scripts/components/*');
-require('scripts/views/*');
-require('scripts/router');
+/**
+ * @ngdoc overview
+ * @name flavallieregithubioApp
+ * @description
+ * # flavallieregithubioApp
+ *
+ * Main module of the application.
+ */
+angular
+  .module('flavallieregithubioApp', [
+    'ngAnimate',
+    'ngCookies',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch'
+  ])
+  .config(function ($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  });
